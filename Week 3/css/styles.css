@@ -1,0 +1,112 @@
+body{
+    display: flex;
+    justify-content: center;
+    /* A special tag that will generate a gradient image */
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    /* Using 100% of the viewport height */
+    height: 100vh;
+}
+
+#main{
+    border: 2px solid black;
+    width: 850px;
+    height: 1060px;
+    background-color: salmon;
+}
+
+#header{
+    height: 140px;
+    border: 5px solid black;
+}
+
+#header h1{
+    font-family: "BBH Sans Bartle", system-ui;
+    font-size: 50px;
+    text-align: center;
+}
+
+#nav{
+    font-family: "Licorice", cursive;
+    font-size: 30px;
+    text-align: center;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding-top: 25px;
+}
+
+.nav-btn{
+    border: 5px solid black;
+    padding: 5px;
+}
+
+.nav-btn:link{
+    text-decoration: none;
+}
+
+.nav-btn:hover{
+    font-size: 20px;
+    color: bisque;
+    text-decoration: underline;
+}
+
+.nav-btn:visited{
+    text-decoration: line-through;
+    color: black;
+}
+
+#content {
+    font-family: "Licorice";
+    width:750px;
+    text-align: center;
+    padding: 20px; 
+    margin-top: 20px; 
+}
+
+#tortuga{
+    height: 300px;
+    animation-name: rotateAndScale;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#MoviePicture{
+    height: 300px;
+}
+
+#SpotifyPicture{
+    height: 150px;
+}
+
+#CoachFrank{
+    height: 350px;
+}
+
+#content h2 {
+    font-size: 40px;
+    margin-bottom: 20px; 
+    text-align: center;
+}
+
+#content p{
+    font-size: 30px;
+    text-align: center;
+}
+
+#header h1:hover{
+    animation-name: rotateText;
+    animation-duration: 2s;
+    animation-direction: alternate;
+}
+
+@keyframes rotateAndScale {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(180deg) scale(0.5); 
+    }
+    100% {
+        transform: rotate(360deg) scale(1); 
+    }
+}
