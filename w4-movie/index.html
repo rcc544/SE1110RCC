@@ -1,42 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Week 4 Assignment">
-    <meta name="author" content="Riley Costantino">
-    <title>Favorite Movies</title>
+    <meta charset="UTF-8" />
+    <title>Smokey & Beverly — Home</title>
+    <meta name="author" content="Your Name" />
+    <meta name="description" content="Home page for Smokey and the Bandit & Beverly Hills Cop." />
+    <link rel="stylesheet" href="/w4-movie/css/styles.css" />
 </head>
-<body>
-    <main>
-        <header id="header">
-        <h1>Smokey and the Bandit</h1>
-        </header>
-        <hr>
-        <nav>
-            <a href="./index.html">HOME</a> | <a href="./cast.html">CAST</a> | <a href="./review.html">REVIEW</a>
-        </nav>
-        <hr>
-        <section>
-            <h2>HOME</h2>
-            <p>In 1977, Big Enos wanted to drink Coors while watching a truck show. However, it was illegal to sell Coors without a permit east of the Mississippi.
-                Bo "Bandit" Darville agrees to make the delivery in 28 hours, while picking up a hitchhiker and being pursued by Sheriff Buford T. Justice,
-                angry that the runaway bride won't marry his son.
-            </p>
-            <img src="" alt="Smokey and the Bandit Cover" width = "200"> 
-        </section>
-        <div id="credits" class="info">
-            <p><b>Company Credits:</b>Rastar Films and Universal Pictures</p>
-            <p><b>Release Date:</b>May 27th, 1977</p>
-            <p><b>Genre:</b>Comedy & Action</p>
-            <p><b>Rating:</b>PG</p>
-            <p><b>Running Time:</b>96 minutes</p>
-            <footer id="footer">
-            <a href="#header">Back to Top</a>
+
+<body id="top">
+    <div id="container">
+        <div id="header">
+            <h1><em>Smokey and the Bandit</em> & <em>Beverly Hills Cop</em></h1>
+            <div id="nav">
+                <a href="index.html">HOME</a>
+                <a href="cast-smokey.html">CAST (Smokey)</a>
+                <a href="review-smokey.html">REVIEW (Smokey)</a>
+                <a href="cast-beverly.html">CAST (BHC)</a>
+                <a href="review-beverly.html">REVIEW (BHC)</a>
+            </div>
         </div>
-        <hr>
-        </footer>
-    </main>
+        <hr />
+
+        <div id="content">
+            <h2>HOME</h2>
+
+            <!-- Smokey -->
+            <h3><em>Smokey and the Bandit</em> (1977)</h3>
+            <p>Legendary truck drivers Bo "Bandit" Darville and Cledus "Snowman" Snow agree to a dare to illegally transport Coors beer from Texas to Georgia. Throughout their journey, they are chased by Sheriff Buford T Justice.</p>
+            <img class="hero-img" src="images/smokeyposter.jpg" alt="Smokey and the Bandit poster" width="160" id = "smokeyposter" />
+            <div class="info">
+                <p><b>Company Credits:</b> Universal Pictures</p>
+                <p><b>Release Date:</b> May 27, 1977</p>
+                <p><b>Genres:</b> Action, Comedy, Chase</p>
+                <p><b>Rating:</b> PG</p>
+                <p><b>Running Time:</b> 96 min</p>
+            </div>
+            <hr />
+
+            <!-- Beverly Hills Cop -->
+            <h3><em>Beverly Hills Cop</em> (1984)</h3>
+            <p>Detroit Detective Axel Foley takes a trip to Beverly Hills to investigate the reasoning behind the murder of an old friend. However, he quickly realizes that the culture of Beverly Hills is different compared to Detroit. </p>
+            <img class="hero-img" src="images/beverlyposter.jpg" alt="Beverly Hills Cop poster" id = "bhcposter" width="160" />
+            <div class="info">
+                <p><b>Company Credits:</b> Paramount Pictures</p>
+                <p><b>Release Date:</b> December 5, 1984</p>
+                <p><b>Genres:</b> Action, Comedy, Crime</p>
+                <p><b>Rating:</b> R</p>
+                <p><b>Running Time:</b> 105 min</p>
+            </div>
+        </div>
+
+        <hr />
+        <div id="footer">
+            <p><a href="#top">Back to Top</a></p>
+            <img src="images/validate-home.png" alt="Validator screenshot for index.html" />
+        </div>
+    </div>
 </body>
+
 </html>

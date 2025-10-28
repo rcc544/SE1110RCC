@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: linear-gradient(
+    90deg,
+    rgba(42, 123, 155, 1) 0%,
+    rgba(87, 199, 133, 1) 50%,
+    rgba(237, 221, 83, 1) 100%
+  );
+  height: 100vh;
+
+  /* Make body a flex container to center content */
+  display: flex;
+  justify-content: center;  /* centers horizontally */
+  align-items: flex-start;  /* or center if you want vertical centering */
+}
+
+#container {
+  width: 850px;
+  background: #fff8f2;
+  border: 3px solid #000;
+  margin: 24px 0;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.25);
+
+  /* optional: add a small radius for smoother look */
+  border-radius: 10px;
+}
+
+
+#header {
+    padding: 14px 14px 8px;
+    border-bottom: 5px solid #000;
+    background: salmon;
+}
+
+#header h1 {
+    margin: 0 0 10px 0;
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, .55);
+}
+
+#smokeyposter {
+    height: 300px;
+    animation-name: rotateAndScale;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+#bhcposter {
+    height: 300px;
+    animation-name: rotateAndScale;
+    animation-duration: 5s;
+    animation-iteration-count: inf1inite;
+    animation-direction: alternate;
+}
+
+#nav {
+    text-align: center;
+    padding: 12px 0;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    background: rgba(0, 0, 0, .08);
+    font-family: "Licorice", cursive;
+    font-size: 26px;
+}
+
+#nav a {
+    display: inline-block;
+    margin: 0 6px 6px;
+    padding: 6px 12px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    background: bisque;
+    color: #000;
+    text-decoration: none;
+}
+
+#nav a:hover,
+#nav a:focus-visible {
+    transform: scale(1.08);
+    background: gold;
+    color: #111;
+    text-decoration: underline;
+}
+
+#nav a:visited {
+    color: darkred;
+}
+
+
+hr {
+    border: none;
+    border-top: 2px solid #000;
+    margin: 14px 0;
+}
+
+
+#content {
+    width: 750px;
+    margin: 0 auto;
+    padding: 18px 14px 22px;
+    text-align: center;
+    background: #fffdfa;
+    border-top: 4px double #000;
+    border-bottom: 4px double #000;
+}
+
+#content h2 {
+    font-family: "Licorice", cursive;
+    font-size: 40px;
+    margin: 8px 0 12px;
+}
+
+#content h3 {
+    font-size: 22px;
+    margin: 6px 0 2px;
+}
+
+#content p {
+    margin: 4px 0 10px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+.hero-img {
+    display: block;
+    margin: 8px auto 12px;
+    border: 2px solid #000;
+    border-radius: 8px;
+}
+
+
+.info {
+    text-align: left;
+    margin: 12px 0 18px;
+    padding: 10px 12px;
+    border-left: 5px solid darkred;
+    background: #fff3e0;
+}
+
+
+@keyframes rotateAndScale {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(180deg) scale(0.5);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
