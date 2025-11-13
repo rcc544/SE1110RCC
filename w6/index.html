@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+    <script>
+        var question = prompt("Do you want to add or multiply?\n Press 1 for add, 2 for multiply.");
+
+        var num1 = parseFloat(prompt("Enter the first number:"));
+        var num2 = parseFloat(prompt("Enter the second number:"));
+
+        function add(a, b) {
+            return a + b;
+        }
+
+        function multiply(a, b) {
+            return a * b;
+        }
+
+        let result;
+
+        if (question == 1) {
+            result = add(num1, num2);
+            alert(`The answer is ${result}`);
+        } else if (question == 2) {
+            result = multiply(num1, num2);
+            alert(`The answer is ${result}`);
+        } else {
+            alert("ERROR. Please try again.");
+        }
+    </script>
+</body>
+
+</html>
