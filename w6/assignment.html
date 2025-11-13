@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+    <script>
+        var hourlyRate = 14.50;
+        var hoursWorked = 32;
+        var taxRate = 0.20;
+
+        var grossPay = hourlyRate * hoursWorked * 2;
+        var uncleShare = grossPay * taxRate;
+        var netPay = grossPay - uncleShare;
+
+        console.log("Your gross pay is $", grossPay);
+        console.log("The money taken for taxes is $", uncleShare);
+        console.log("Your net pay is $", netPay);
+        console.log("Have a good day.");
+    </script>
+</body>
+
+</html>
