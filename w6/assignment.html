@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <title>Week 6 | JavaScript Pay Calculator </title>
 </head>
 
 <body>
@@ -14,10 +16,10 @@
         var uncleShare = grossPay * taxRate;
         var netPay = grossPay - uncleShare;
 
-        console.log("Your gross pay is $", grossPay);
-        console.log("The money taken for taxes is $", uncleShare);
-        console.log("Your net pay is $", netPay);
-        console.log("Have a good day.");
+        document.write("<p>Your gross pay is $" + grossPay + "</p>");
+        document.write("<p>The money taken for taxes is $" + uncleShare + "</p>");
+        document.write("<p>Your net pay is $" + netPay + "</p>");
+        document.write("<p>Have a good day.</p>");
     </script>
 </body>
 
